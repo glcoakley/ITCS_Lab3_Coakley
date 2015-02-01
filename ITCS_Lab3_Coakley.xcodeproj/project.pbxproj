@@ -379,7 +379,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ITCS_Lab3_Coakley/ITCS_Lab3_Coakley-Prefix.pch";
 				INFOPLIST_FILE = "ITCS_Lab3_Coakley/ITCS_Lab3_Coakley-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -392,7 +394,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ITCS_Lab3_Coakley/ITCS_Lab3_Coakley-Prefix.pch";
 				INFOPLIST_FILE = "ITCS_Lab3_Coakley/ITCS_Lab3_Coakley-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,6 +460,7 @@
 				62086D8D1A7C593800D7C66C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62086D8E1A7C593800D7C66C /* Build configuration list for PBXNativeTarget "ITCS_Lab3_CoakleyTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +469,7 @@
 				62086D901A7C593800D7C66C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

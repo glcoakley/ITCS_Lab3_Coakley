@@ -10,8 +10,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *txtDegrees;
 @property (weak, nonatomic) IBOutlet UITextField *txtDegreesF;
-@property (weak, nonatomic) IBOutlet UITextField *txtDegreesC;
 - (IBAction)CtoF:(UIButton *)sender;
 - (IBAction)FtoC:(UIButton *)sender;
 
@@ -31,11 +31,28 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)CtoF:(id)sender
+- (IBAction)CtoF:(UIButton *)sender
 {
+    double temperature = [self.txtDegrees.text doubleValue];
+    double newTemperature = (9*temperature/5) + 32;
+    self.txtDegrees.text = [NSString stringWithFormat:@"%.1f F", newTemperature];
+
 }
 
 - (IBAction)FtoC:(UIButton *)sender
 {
+    double temperature = [self.txtDegrees.text doubleValue];
+    double newTemperature = (temperature-32)*5/9;
+    self.txtDegrees.text = [NSString stringWithFormat:@"%.1f C", newTemperature];
+    
 }
+
+
+// this causes the keyboard to hide when the view is touched.
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.txtDegrees endEditing:YES];
+//    [self.txtDegreesF endEditing:YES];
+}
+
 @end
