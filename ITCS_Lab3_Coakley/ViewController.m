@@ -11,7 +11,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *txtDegrees;
-@property (weak, nonatomic) IBOutlet UITextField *txtDegreesF;
+//@property (weak, nonatomic) IBOutlet UITextField *txtDegreesF;
 - (IBAction)CtoF:(UIButton *)sender;
 - (IBAction)FtoC:(UIButton *)sender;
 
@@ -51,7 +51,19 @@
 // this causes the keyboard to hide when the view is touched.
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self.txtDegrees endEditing:YES];
+    @try
+    {
+        [self.txtDegrees endEditing:YES];
+    }
+    @catch ( NSException *exc )
+    {
+        
+    }
+    @finally
+    {
+        [self.txtDegrees endEditing:YES];
+
+    }
 //    [self.txtDegreesF endEditing:YES];
 }
 

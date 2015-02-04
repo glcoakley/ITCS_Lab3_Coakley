@@ -60,7 +60,6 @@
                     </view>
                     <connections>
                         <outlet property="txtDegrees" destination="Bcu-o3-KFd" id="7yR-H6-iB5"/>
-                        <outlet property="txtDegreesF" destination="Bcu-o3-KFd" id="Dco-3W-Cfx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
